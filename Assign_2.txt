@@ -1,0 +1,14 @@
+                                     ASSIGNMENT 2.
+
+1.Which field of the Customers table is the primary key?
+->CNUM of the customer table is Primary key .Because it is unquily identified of the table.
+
+2.What is the 4th column of the Customers table?
+->Rating is the 4th column of the Customer table.
+
+3.What is another word for row? For column?
+-> Another word for rows are Tuple,Entity and Apportunity.
+   Another woed for table are Attributes,Method.
+
+4.Why isn’t it possible to see the first five rows of a table?
+->There is no  particular order to store the data in mysql .If you want the first 5 rows of data  then we use ORDER BY clause. 
