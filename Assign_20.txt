@@ -36,4 +36,24 @@ value is accessed by commands such as Select or Insert. We will use a view of th
 Orders table called Entryorders to insert rows into the Orders table. Create the
 Orders table, so that SYSDATE is automatically inserted for odate if no value is
 given. Then create the Entryorders view so that no values can be given. 
-->
+->create table orders1(
+
+Onum int(4), 
+Amt float(7,2), 
+Odate date default current_timestamp, 
+
+cnum int(4), 
+snum int (4)
+
+);
+
+	
+	
+
+Insert into Orders1 (Onum, Amt, Cnum, Snum) values
+( 1001, 1927.23,2001,3001);
+
+	
+create view Entryorders
+  as 
+select * from orders1;
