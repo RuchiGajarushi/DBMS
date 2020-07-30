@@ -1,0 +1,105 @@
+                                    Exercise - 1
+1.Write a program that computes the perimeter and the area of a rectangle. Define
+ your own values for the length and width. (Assuming that L and W are the length
+ and width of the rectangle, Perimeter = 2*(L+W) and Area = L*W. 
+->delimiter//
+  create procedure abc()
+  begin 
+  	declare L int(4);
+  	declare w int(4);
+  	declare A flaot(7,2);
+  	declare P int(4);
+  	set L = 4;
+  	set W = 6;
+  	set A = L * W;
+	set P =  2*(L+W);
+  end; //
+  delimiter;
+
+2.Write a program that declares an integer variable called num, assigns a value to it,and computes and inserts into the tempp table the value of the variable itself, its square, and its cube. 
+-> delimiter//
+   create procedure squ()
+   begin
+	declare num int(4);
+	declare S int(4);
+	declare Q int(4);
+	set num = 10;
+	set S = num*num;
+	set Q = num*num*num;
+	insert into tempp values(num,S,Q); 
+   end; //
+   delimiter;
+
+3.Convert a temperature in Fahrenheit (F) to its equivalent in Celsius (C) and vice
+  versa. The required formulae are:- C= (F-32)*5/9
+  F= 9/5*C + 32 .
+->delimiter//
+   create procedure squ()
+   begin
+	declare TF int(4);
+	declare TC int(4);
+	declare F int(4);
+	decalre C int (4);
+	set TF = 99;
+	set TC = 37;
+	set F =  9/5*TC + 32;
+	set C =   (TF-32)*5/9  
+   end; //
+   delimiter;
+
+4.Convert a number of inches into yards, feet, and inches. For example, 124 inches equals 3 yards, 1 foot, and 4 inches.
+->delimiter//
+  create procedure abc()
+  begin 
+  	declare Y int(4);
+  	declare F int(4);
+  	declare I intt(4);
+  	declare F1 int(4);
+  	set F = I/12;
+  	set Y = F/3;
+  	set F1 = Fmod3;
+	set I = Imod12;
+	insert into tempp values(Y,F,I);
+  end; //
+  delimiter;
+
+5.Write a program that enables a user to input an integer. The program should then state whether the integer is evenly divisible by 5.
+->delimiter //
+
+create procrdure abc(x int(4)
+)
+
+begin	
+	
+	if x%5 = 0 then
+		
+		insert into tempp values (x,'Is divisible by 5');
+	
+	end if;
+
+end; 
+//
+delimiter ;
+
+6.Your block should read in two real numbers and tell whether the product of the two numbers is equal to or greater than 100.
+->delimiter //
+
+  create procrdure abc(x int(4),y int(4))
+
+  begin
+	
+
+	set z int(4);
+	set z = x*y;	
+	if z >= 100 then
+		
+		insert into tempp values(z,'Product is equal to or greater than 100');
+	else
+		insert into tempp values(z,'Product is not equal to grater than 100');  
+	
+	end if;
+
+end; 
+//
+delimiter ;
+
